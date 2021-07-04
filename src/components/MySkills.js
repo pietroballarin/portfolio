@@ -1,4 +1,5 @@
 import React from 'react';
+import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { skills } from '../data';
 
 export default function MySkills() {
@@ -6,11 +7,13 @@ export default function MySkills() {
         <section id="skills">
             <h1>SKILLS</h1>
             <ul>
-                <li>
-                {skills.map(skill => 
-                    <div className="skilltag">{skill}</div>
+                {skills.map(skill =>
+                    <li className="skilltag">
+                        <BadgeCheckIcon className="check-icon"/>
+                        <span className="skill-text">{skill}</span>
+                    </li>
+                    
                 )}
-                </li>
             </ul>
         </section>
     )
