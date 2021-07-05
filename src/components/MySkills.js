@@ -7,8 +7,9 @@ export default function MySkills() {
         <section id="skills">
             <h1>SKILLS</h1>
             <ul>
+            
                 {skills.map(skill =>
-                    <li className="skilltag">
+                    <li key={skill} className="skilltag">
                         <BadgeCheckIcon className="check-icon"/>
                         <span className="skill-text">{skill}</span>
                     </li>

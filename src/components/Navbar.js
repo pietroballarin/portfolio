@@ -10,8 +10,8 @@ export default function Navbar() {
                     <a className="left-btn" href="#projects">PROJECTS</a>
                 </div>    
                 <div className="navbar2">
-                    <a className="right-btn">GithHub</a>
-                    <a className="right-btn">LinkedIn</a>
+                    <a className="right-btn" href="https://www.github.com/pietroballarin">GitHub</a>
+                    <a className="right-btn" href="https://www.linkedin.com/in/pietroballarin">LinkedIn</a>
                     <a className="right-btn" href="#contact-me">Contacts</a>
                 </div>
             </nav>

@@ -1,5 +1,40 @@
 export const projects = [
-
+    {
+        title: 'Pawly',
+        description: '',
+        stack: '',
+        image: '',
+        github: '',
+        deployedVersion: '',
+        altimg: ''
+    },
+    {
+        title: 'Ironchat',
+        description: '',
+        stack: '',
+        image: '',
+        github: '',
+        deployedVersion: '',
+        altimg: ''
+    },
+    {
+        title: 'Autobahn Turbo Maniac',
+        description: '',
+        stack: '',
+        image: '',
+        github: '',
+        deployedVersion: '',
+        altimg: ''
+    },
+    {
+        title: 'GetThrifty',
+        description: '',
+        stack: '',
+        image: '',
+        github: '',
+        deployedVersion: '',
+        altimg: ''
+    },
 ]
 
 export const skills = [
