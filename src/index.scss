@@ -138,16 +138,31 @@ $clr3: #ff914d; // details color
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin: 40px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
     color: #fff;
   }
 
-  #projects {
+  .box-details > p {
+    text-align: center;
+    padding: 0 200px 0 200px
+  }
+
+  #my-projects > h1 {
+    background-color: $clr2;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 100px;
+    font-size: 2em;
+  }
+
+  .projects {
     display: flex;
     flex-wrap: wrap;
   }
 
-  #projects > div {
+  .projects > div {
     flex: 0 50%;
     margin-bottom: 0px;
   }
