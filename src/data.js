@@ -1,39 +1,39 @@
 export const projects = [
     {
         title: 'Pawly',
-        description: '',
-        stack: '',
-        image: '',
-        github: '',
-        deployedVersion: '',
-        altimg: ''
+        description: "Ironhack's graduates show winner. Web app to find businesses and services for dog owners. Team developed and created in cooperation with a UX/UI team as well as the Berlin Startup School",
+        stack: 'JavaScript | NodeJS | MongoDB | React | Cloudinary',
+        image: '../PawlyLow.gif',
+        github: 'https://github.com/WeArePawly/Pawly',
+        deployedVersion: 'https://wearepawly.herokuapp.com/',
+        altimg: 'Pawly Demo'
     },
     {
         title: 'Ironchat',
-        description: '',
-        stack: '',
-        image: '',
-        github: '',
+        description: "Ironhack's hackathon winner. Team developed chatroom app capable of instantly translating messages.",
+        stack: 'JavaScript | React | Socket.io | Google Translate API',
+        image: '../PawlyLow.gif',
+        github: 'https://github.com/paulanicioli/hackathon-global',
         deployedVersion: '',
-        altimg: ''
+        altimg: 'Ironchat App Demo'
     },
     {
         title: 'Autobahn Turbo Maniac',
-        description: '',
-        stack: '',
-        image: '',
-        github: '',
-        deployedVersion: '',
-        altimg: ''
+        description: '2D racing game.',
+        stack: 'JavaScript | P5.js | HTML | CSS',
+        image: '../PawlyLow.gif',
+        github: 'http://github.com/pietroballarin/Game-Project',
+        deployedVersion: 'https://pietroballarin.github.io/Game-Project/',
+        altimg: 'Autobahn Turbo Maniac Game Demo'
     },
     {
         title: 'GetThrifty',
-        description: '',
-        stack: '',
-        image: '',
-        github: '',
-        deployedVersion: '',
-        altimg: ''
+        description: 'Web app to sell used products and create your own ads.',
+        stack: 'JavaScript | NodeJS | MongoDB | Handlebars | Passport',
+        image: '../PawlyLow.gif',
+        github: 'https://github.com/pietroballarin/Getthrifty',
+        deployedVersion: 'https://getthrifty.herokuapp.com/',
+        altimg: 'GetThrifty Demo'
     },
 ]
 

@@ -37,12 +37,14 @@ $clr3: #ff914d; // details color
     float: right;
     align-items: center;
     margin-top: 8px;
+    
   }
 
   .navbar2 .right-btn {
     color: #fff;
     height: 100%;
     padding: 10px;
+    text-decoration: none;
   }
 
   .left-btn:hover {
@@ -57,7 +59,8 @@ $clr3: #ff914d; // details color
 
   .navbar .left-btn {
     color: #fff;
-    padding: 10px;  
+    padding: 10px; 
+    text-decoration: none; 
   }
 
   #about-me {
@@ -123,6 +126,31 @@ $clr3: #ff914d; // details color
     margin: 10px
   }
 
+  .project-box {
+    width: 100%;
+    background-color: $clr2;
+  }
+
+  .box-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 40px;
+    color: #fff;
+  }
+
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #projects > div {
+    flex: 0 50%;
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width:600px)  { 
