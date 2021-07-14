@@ -1,6 +1,7 @@
 import React from 'react';
 import { projects } from '../data';
 
+
 export default function MyProjects() {
     return (
         <section id="my-projects">

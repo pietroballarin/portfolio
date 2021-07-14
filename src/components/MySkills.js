@@ -1,11 +1,13 @@
 import React from 'react';
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import { BadgeCheckIcon, AcademicCapIcon } from "@heroicons/react/solid";
 import { skills } from '../data';
 
 export default function MySkills() {
     return (
         <section id="skills">
             <h1>SKILLS</h1>
+            <AcademicCapIcon className="cap-icon"/>
+            
             <ul>
             
                 {skills.map(skill =>

@@ -92,9 +92,14 @@ $clr3: #ff914d; // details color
     padding-bottom: 200px;
     display: flex;
 	  flex-direction: column;
-	  flex-wrap: wrap;
+	  flex-wrap: nowrap;
 	  justify-content: space-around;
 	  align-items: center;
+  }
+
+  .cap-icon {
+    width: 200px;
+    color: $clr3
   }
 
   #skills ul {
@@ -165,6 +170,7 @@ $clr3: #ff914d; // details color
   .projects > div {
     flex: 0 50%;
     margin-bottom: 0px;
+    padding-bottom: 100px;
   }
 }
 
