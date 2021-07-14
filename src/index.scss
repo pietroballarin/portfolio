@@ -89,7 +89,7 @@ $clr3: #ff914d; // details color
     border: none;
     margin: 0 auto 0 auto;
     height: 400px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     display: flex;
 	  flex-direction: column;
 	  flex-wrap: nowrap;
@@ -97,28 +97,49 @@ $clr3: #ff914d; // details color
 	  align-items: center;
   }
 
-  .cap-icon {
-    width: 200px;
-    color: $clr3
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .section-icon {
+    width: 100px;
+    color: $clr3;
+    padding-bottom: 50px;
   }
 
   #skills ul {
-    columns: 2;
-    -webkit-columns: 2; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    column-gap: 100px;
+    row-gap: 20px
   }
 
   #skills li {
     list-style: none;
   }
 
+  #skills > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .skilltag {
     color: #fff;
     background-color: $clr1;
-    width: 250px;
-    height: 40px;
+    width: 300px;
+    height: 50px;
     border-radius: 7px;
     margin-top: 10px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-items: center;
   }
 
   .check-icon {
@@ -128,7 +149,18 @@ $clr3: #ff914d; // details color
   }
 
   .skill-text {
-    margin: 10px
+    text-align: center;
+  }
+
+
+  .projects-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $clr2;
+    padding-bottom: 20px;
   }
 
   .project-box {
@@ -143,8 +175,6 @@ $clr3: #ff914d; // details color
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin: 0px 0px 10px 0px;
-    padding: 0px 0px 10px 0px;
     color: #fff;
   }
 
@@ -153,33 +183,203 @@ $clr3: #ff914d; // details color
     padding: 0 200px 0 200px
   }
 
-  #my-projects > h1 {
-    background-color: $clr2;
-    text-align: center;
-    color: #fff;
-    margin: 0;
-    padding-bottom: 100px;
-    font-size: 2em;
-  }
 
   .projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: $clr2;
   }
 
-  .projects > div {
-    flex: 0 50%;
-    margin-bottom: 0px;
-    padding-bottom: 100px;
+  .project-box { 
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width:600px)  { 
 
-  .navbar .left-btn {
-    color: red;
+  .header-section {
+    height: 40px;
+    border: none;
+    background-color: $clr1;
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    display: inline;
+    float: left;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .navbar2 {
+    display: inline;
+    float: right;
+    align-items: center;
+    margin-top: 8px;
+    
+  }
+
+  .navbar2 .right-btn {
+    color: #fff;
     height: 100%;
-    padding: 20px;  
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .left-btn:hover {
+    background-color: $clr3;
+    padding: 10px;  
+  }
+
+  .right-btn:hover {
+    background-color: $clr3;
+    padding: 10px;  
+  }
+
+  .navbar .left-btn {
+    color: #fff;
+    padding: 10px; 
+    text-decoration: none; 
+  }
+
+  #about-me {
+    background-color: $clr2;
+    border: none;
+    margin-top: 0;
+  }
+
+  .about-container {
+    display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  justify-content: space-around;
+	  align-items: center;
+    padding: 100px 25% 50px 25%;
+    color: #fff
+  }
+
+  .about-container p{
+    text-align: center;
+  }
+
+  #skills {
+    color: #fff;
+    background-color: $clr2;
+    border: none;
+    margin: 0 auto 0 auto;
+    height: 400px;
+    padding-bottom: 100px;
+    display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  justify-content: space-around;
+	  align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .section-icon {
+    width: 100px;
+    color: $clr3;
+    padding-bottom: 50px;
+  }
+
+  #skills ul {
+    display: grid;
+    grid-template-columns: 1fr; 
+    column-gap: 100px;
+    row-gap: 20px
+  }
+
+  #skills li {
+    list-style: none;
+  }
+
+  #skills > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .skilltag {
+    color: #fff;
+    background-color: $clr1;
+    height: 50px;
+    border-radius: 7px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-items: center;
+  }
+
+  .check-icon {
+    width: 20px;
+    color: $clr3;
+    margin: 10px
+  }
+
+  .skill-text {
+    text-align: center;
+  }
+
+
+  .projects-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $clr2;
+    padding-bottom: 20px;
+  }
+
+  .project-box {
+    width: 100%;
+    background-color: $clr2;
+  }
+
+  .box-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+  }
+
+  .box-details > p {
+    text-align: center;
+    padding: 0 200px 0 200px
+  }
+
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: $clr2;
+  }
+
+  .project-box { 
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
   }
 
   

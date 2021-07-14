@@ -1,11 +1,15 @@
 import React from 'react';
 import { projects } from '../data';
+import { CodeIcon } from "@heroicons/react/solid";
 
 
 export default function MyProjects() {
     return (
         <section id="my-projects">
-            <h1>MY PROJECTS</h1>
+            <div className="projects-header">
+                <h1>MY PROJECTS</h1>
+                <CodeIcon className="section-icon"/>
+            </div>
             <div className="projects">
                 {projects.map(project =>
                 <div className="project-box">

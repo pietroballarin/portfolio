@@ -6,18 +6,19 @@ export default function MySkills() {
     return (
         <section id="skills">
             <h1>SKILLS</h1>
-            <AcademicCapIcon className="cap-icon"/>
-            
-            <ul>
-            
-                {skills.map(skill =>
-                    <li key={skill} className="skilltag">
-                        <BadgeCheckIcon className="check-icon"/>
-                        <span className="skill-text">{skill}</span>
-                    </li>
-                    
-                )}
-            </ul>
+            <AcademicCapIcon className="section-icon"/>
+            <div>
+                <ul>
+                
+                    {skills.map(skill =>
+                        <li key={skill} className="skilltag">
+                            <BadgeCheckIcon className="check-icon"/>
+                            <span className="skill-text">{skill}</span>
+                        </li>
+                        
+                    )}
+                </ul>
+            </div>
         </section>
     )
 }

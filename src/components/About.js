@@ -1,5 +1,5 @@
 import React from 'react';
-import { description } from '../data';
+import { pitch } from '../data';
 
 export default function About() {
     return (
@@ -7,7 +7,7 @@ export default function About() {
             <div className="about-container">
                 <h1 className="title">Pietro Ballarin</h1>
                 <h2 className="subtitle">Developer</h2>
-                <p className="description">{description}</p>
+                <p className="description">{pitch}</p>
             </div>
         </section>
     )
