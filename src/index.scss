@@ -15,6 +15,7 @@ code {
 $clr1: #2d2e32; // color navbar
 $clr2: #191a1c; // main background color
 $clr3: #ff914d; // details color
+$maxWidthMob: 600px;
 
 @media (min-width:601px) { 
 
@@ -200,7 +201,7 @@ $clr3: #ff914d; // details color
   }
 }
 
-@media (max-width:600px)  { 
+@media (max-width:$maxWidthMob)  { 
 
   .header-section {
     height: 40px;
